@@ -1,0 +1,32 @@
+class Glyph
+{
+    field char _value;
+    field Array _sprite;
+
+    constructor Glyph new(char value, Array sprite)
+    {
+        let _value = value;
+        let _sprite = sprite;
+        return this;
+    }
+
+    method Array GetSprite()
+    {
+        return _sprite;
+    }
+
+    method char GetValue()
+    {
+        return _value;
+    }
+
+    /*method void SetRow(int index, int value)
+    {
+        if (index > 10)
+        {
+            do Sys.error(1);
+        }
+        let rows[index] = value;
+        return;
+    }*/
+}

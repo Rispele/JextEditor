@@ -2,6 +2,7 @@ class Main
 {
     function void main()
     {
-        Screen.printChar(65);
+        do Output.printChar(65);
+        return;
     }
 }

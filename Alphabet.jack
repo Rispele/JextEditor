@@ -1,0 +1,29 @@
+class Alphabet
+{
+    field Array _glyphs;
+
+    constructor Alphabet new(int size)
+    {
+        let _glyphs = Array.new(size);
+        return this;
+    }
+
+    method void AddChar(Glyph glyph)
+    {
+        let _glyphs[glyph.GetValue()] = glyph;
+        return;
+    }
+
+    method Glyph GetChar(char ch)
+    {
+        return _glyphs[ch];
+    }
+
+    method Array GetSprite(char ch)
+    {
+        var Glyph glyph;
+        let glyph = _glyphs[ch];
+
+        return glyph.GetSprite();
+    }
+}
