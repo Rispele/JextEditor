@@ -1,0 +1,58 @@
+class RussianAlphabet
+{
+    field Alphabet _alphabet;
+    static char A, B, V, G, D, E, YO, ZH, 
+                Z, I, Y, K, L, M, N, O, P, 
+                R, S, T, U, F, H, TS, CH, 
+                SH, SCH, HARD_CHAR, IY, 
+                SOFT_CHAR, AE, YU, YA;
+
+    //Чтобы сдвинуть букву на 8 пикселей нужно уиножить каждое значение спрайта на 2^8 = 256
+    constructor RussianAlphabet new()
+    {
+        var Array sprite;
+        do RussianAlphabet.InitializeCharValues();
+
+        let _alphabet = Alphabet.new(128);
+        
+        let sprite = RussianAlphabet.GetASprite();
+        let _alphabet[A] = Glyph.new(A, sprite); 
+
+        return this;
+    }
+
+    function void InitializeCharValues()
+    {
+        let A = 70;
+        let B = 60;
+        let V = 68;
+        let G = 85;
+        let D = 76;
+        return;
+    }
+
+    function Array GetASprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 62;
+        let sprite[2] = 99;
+        let sprite[3] = 65;
+        let sprite[4] = 65;
+        let sprite[5] = 65;
+        let sprite[6] = 65;
+        let sprite[7] = 127;
+        let sprite[8] = 65;
+        let sprite[9] = 65;
+        let sprite[10] = 65;
+
+        return sprite;
+    }
+
+    function Array GetBSprite()
+    {
+
+    }
+}
