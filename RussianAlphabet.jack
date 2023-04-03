@@ -27,6 +27,96 @@ class RussianAlphabet
         let sprite = RussianAlphabet.GetGSprite();
         let _alphabet[G] = Glyph.new(G, sprite);
 
+        let sprite = RussianAlphabet.GetDSprite();
+        let _alphabet[D] = Glyph.new(D, sprite);
+
+        let sprite = RussianAlphabet.GetESprite();
+        let _alphabet[E] = Glyph.new(E, sprite);
+
+        let sprite = RussianAlphabet.GetDSprite();
+        let _alphabet[D] = Glyph.new(D, sprite);
+
+        let sprite = RussianAlphabet.GetYOSprite();
+        let _alphabet[YO] = Glyph.new(YO, sprite);
+
+        let sprite = RussianAlphabet.GetZHSprite();
+        let _alphabet[ZH] = Glyph.new(ZH, sprite);
+
+        let sprite = RussianAlphabet.GetZSprite();
+        let _alphabet[Z] = Glyph.new(Z, sprite);
+
+        let sprite = RussianAlphabet.GetISprite();
+        let _alphabet[I] = Glyph.new(I, sprite);
+
+        let sprite = RussianAlphabet.GetYSprite();
+        let _alphabet[Y] = Glyph.new(Y, sprite);
+
+        let sprite = RussianAlphabet.GetKSprite();
+        let _alphabet[K] = Glyph.new(K, sprite);
+
+        let sprite = RussianAlphabet.GetLSprite();
+        let _alphabet[L] = Glyph.new(L, sprite);
+
+        let sprite = RussianAlphabet.GetMSprite();
+        let _alphabet[M] = Glyph.new(M, sprite);
+
+        let sprite = RussianAlphabet.GetNSprite();
+        let _alphabet[N] = Glyph.new(N, sprite);
+
+        let sprite = RussianAlphabet.GetOSprite();
+        let _alphabet[O] = Glyph.new(O, sprite);
+
+        let sprite = RussianAlphabet.GetPSprite();
+        let _alphabet[P] = Glyph.new(P, sprite);
+
+        let sprite = RussianAlphabet.GetRSprite();
+        let _alphabet[R] = Glyph.new(R, sprite);
+
+        let sprite = RussianAlphabet.GetSSprite();
+        let _alphabet[S] = Glyph.new(S, sprite);
+
+        let sprite = RussianAlphabet.GetTSprite();
+        let _alphabet[T] = Glyph.new(T, sprite);
+
+        let sprite = RussianAlphabet.GetUSprite();
+        let _alphabet[U] = Glyph.new(U, sprite);
+
+        let sprite = RussianAlphabet.GetFSprite();
+        let _alphabet[F] = Glyph.new(F, sprite);
+
+        let sprite = RussianAlphabet.GetHSprite();
+        let _alphabet[H] = Glyph.new(H, sprite);
+
+        let sprite = RussianAlphabet.GetTSSprite();
+        let _alphabet[TS] = Glyph.new(TS, sprite);
+
+        let sprite = RussianAlphabet.GetCHSprite();
+        let _alphabet[CH] = Glyph.new(CH, sprite);
+
+        let sprite = RussianAlphabet.GetSHSprite();
+        let _alphabet[SH] = Glyph.new(SH, sprite);
+
+        let sprite = RussianAlphabet.GetSCHSprite();
+        let _alphabet[SCH] = Glyph.new(SCH, sprite);
+
+        let sprite = RussianAlphabet.GetHARD_CHARSprite();
+        let _alphabet[HARD_CHAR] = Glyph.new(HARD_CHAR, sprite);
+
+        let sprite = RussianAlphabet.GetIYSprite();
+        let _alphabet[IY] = Glyph.new(IY, sprite);
+
+        let sprite = RussianAlphabet.GetSOFT_CHARSprite();
+        let _alphabet[SOFT_CHAR] = Glyph.new(SOFT_CHAR, sprite);
+
+        let sprite = RussianAlphabet.GetAESprite();
+        let _alphabet[AE] = Glyph.new(AE, sprite);
+
+        let sprite = RussianAlphabet.GetYUSprite();
+        let _alphabet[YU] = Glyph.new(YU, sprite);
+
+        let sprite = RussianAlphabet.GetYASprite();
+        let _alphabet[YA] = Glyph.new(YA, sprite);
+
         return this;
     }
 
@@ -69,7 +159,7 @@ class RussianAlphabet
         let HARD_CHAR = 93;
         let IY = 83;
         let SOFT_CHAR = 77;
-        let AE = 96;
+        let AE = 39;
         let YU = 46;
         let YA = 90;
         return;
