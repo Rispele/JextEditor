@@ -7,7 +7,7 @@ class RussianAlphabet
                 SH, SCH, HARD_CHAR, IY, 
                 SOFT_CHAR, AE, YU, YA;
 
-    //Чтобы сдвинуть букву на 8 пикселей нужно уиножить каждое значение спрайта на 2^8 = 256
+    //Чтобы сдвинуть букву на 8 пикселей нужно умножить каждое значение спрайта на 2^8 = 256
     constructor RussianAlphabet new()
     {
         var Array sprite;
@@ -37,13 +37,254 @@ class RussianAlphabet
         let sprite = Array.new(11);
 
         let sprite[0] = 0;
-        let sprite[1] = 62;
-        let sprite[2] = 99;
-        let sprite[3] = 65;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 62;
+        let sprite[4] = 65;
+        let sprite[5] = 64;
+        let sprite[6] = 126;
+        let sprite[7] = 65;
+        let sprite[8] = 65;
+        let sprite[9] = 97;
+        let sprite[10] = 94;
+
+        return sprite;
+    }
+
+    function Array GetBSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 120;
+        let sprite[2] = 6;
+        let sprite[3] = 1;
+        let sprite[4] = 1;
+        let sprite[5] = 63;
+        let sprite[6] = 1;
+        let sprite[7] = 1;
+        let sprite[8] = 1;
+        let sprite[9] = 1;
+        let sprite[10] = 62;
+
+        return sprite;
+    }
+
+    function Array GetVSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 63;
+        let sprite[4] = 65;
+        let sprite[5] = 65;
+        let sprite[6] = 63;
+        let sprite[7] = 65;
+        let sprite[8] = 65;
+        let sprite[9] = 65;
+        let sprite[10] = 63;
+
+        return sprite;
+    }
+
+    function Array GetGSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 127;
+        let sprite[4] = 1;
+        let sprite[5] = 1;
+        let sprite[6] = 1;
+        let sprite[7] = 1;
+        let sprite[8] = 1;
+        let sprite[9] = 1;
+        let sprite[10] = 1;
+
+        return sprite;
+    }
+
+    function Array GetDSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(12);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 56;
+        let sprite[4] = 36;
+        let sprite[5] = 36;
+        let sprite[6] = 36;
+        let sprite[7] = 36;
+        let sprite[8] = 34;
+        let sprite[9] = 34;
+        let sprite[10] = 127;
+        let sprite[11] = 65;
+
+        return sprite;
+    }
+
+    function Array GetESprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 62;
         let sprite[4] = 65;
         let sprite[5] = 65;
         let sprite[6] = 65;
-        let sprite[7] = 127;
+        let sprite[7] = 63;
+        let sprite[8] = 1;
+        let sprite[9] = 1;
+        let sprite[10] = 62;
+
+        return sprite;
+    }
+
+    function Array GetYOSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 34;
+        let sprite[2] = 0;
+        let sprite[3] = 62;
+        let sprite[4] = 65;
+        let sprite[5] = 65;
+        let sprite[6] = 65;
+        let sprite[7] = 63;
+        let sprite[8] = 1;
+        let sprite[9] = 1;
+        let sprite[10] = 62;
+
+        return sprite;
+    }
+
+    function Array GetZHSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 73;
+        let sprite[4] = 42;
+        let sprite[5] = 42;
+        let sprite[6] = 28;
+        let sprite[7] = 42;
+        let sprite[8] = 42;
+        let sprite[9] = 73;
+        let sprite[10] = 73;
+
+        return sprite;
+    }
+
+    function Array GetZSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 63;
+        let sprite[4] = 64;
+        let sprite[5] = 64;
+        let sprite[6] = 63;
+        let sprite[7] = 64;
+        let sprite[8] = 64;
+        let sprite[9] = 64;
+        let sprite[10] = 63;
+
+        return sprite;
+    }
+
+    function Array GetISprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 65;
+        let sprite[4] = 65;
+        let sprite[5] = 97;
+        let sprite[6] = 81;
+        let sprite[7] = 73;
+        let sprite[8] = 69;
+        let sprite[9] = 67;
+        let sprite[10] = 65;
+
+        return sprite;
+    }
+
+    function Array GetYSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 34;
+        let sprite[2] = 28;
+        let sprite[3] = 65;
+        let sprite[4] = 65;
+        let sprite[5] = 97;
+        let sprite[6] = 81;
+        let sprite[7] = 73;
+        let sprite[8] = 69;
+        let sprite[9] = 67;
+        let sprite[10] = 65;
+
+        return sprite;
+    }
+
+    function Array GetKSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 65;
+        let sprite[4] = 33;
+        let sprite[5] = 17;
+        let sprite[6] = 15;
+        let sprite[7] = 17;
+        let sprite[8] = 33;
+        let sprite[9] = 65;
+        let sprite[10] = 65;
+
+        return sprite;
+    }
+
+    function Array GetLSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 124;
+        let sprite[4] = 66;
+        let sprite[5] = 66;
+        let sprite[6] = 66;
+        let sprite[7] = 65;
         let sprite[8] = 65;
         let sprite[9] = 65;
         let sprite[10] = 65;
@@ -51,8 +292,407 @@ class RussianAlphabet
         return sprite;
     }
 
-    function Array GetBSprite()
+    function Array GetMSprite()
     {
+        var Array sprite;
+        let sprite = Array.new(11);
 
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 65;
+        let sprite[4] = 99;
+        let sprite[5] = 99;
+        let sprite[6] = 99;
+        let sprite[7] = 85;
+        let sprite[8] = 85;
+        let sprite[9] = 85;
+        let sprite[10] = 73;
+
+        return sprite;
+    }
+
+    function Array GetNSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 65;
+        let sprite[4] = 65;
+        let sprite[5] = 65;
+        let sprite[6] = 127;
+        let sprite[7] = 65;
+        let sprite[8] = 65;
+        let sprite[9] = 65;
+        let sprite[10] = 65;
+
+        return sprite;
+    }
+
+    function Array GetOSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 28;
+        let sprite[4] = 34;
+        let sprite[5] = 65;
+        let sprite[6] = 65;
+        let sprite[7] = 65;
+        let sprite[8] = 65;
+        let sprite[9] = 34;
+        let sprite[10] = 28;
+
+        return sprite;
+    }
+
+    function Array GetPSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 127;
+        let sprite[4] = 65;
+        let sprite[5] = 65;
+        let sprite[6] = 65;
+        let sprite[7] = 65;
+        let sprite[8] = 65;
+        let sprite[9] = 65;
+        let sprite[10] = 65;
+
+        return sprite;
+    }
+
+    function Array GetRSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 63;
+        let sprite[4] = 65;
+        let sprite[5] = 65;
+        let sprite[6] = 65;
+        let sprite[7] = 63;
+        let sprite[8] = 1;
+        let sprite[9] = 1;
+        let sprite[10] = 1;
+
+        return sprite;
+    }
+
+    function Array GetSSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 60;
+        let sprite[4] = 66;
+        let sprite[5] = 1;
+        let sprite[6] = 1;
+        let sprite[7] = 1;
+        let sprite[8] = 1;
+        let sprite[9] = 66;
+        let sprite[10] = 60;
+
+        return sprite;
+    }
+
+    function Array GetTSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 127;
+        let sprite[4] = 8;
+        let sprite[5] = 8;
+        let sprite[6] = 8;
+        let sprite[7] = 8;
+        let sprite[8] = 8;
+        let sprite[9] = 8;
+        let sprite[10] = 8;
+
+        return sprite;
+    }
+
+    function Array GetUSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 65;
+        let sprite[4] = 65;
+        let sprite[5] = 65;
+        let sprite[6] = 65;
+        let sprite[7] = 98;
+        let sprite[8] = 92;
+        let sprite[9] = 64;
+        let sprite[10] = 65;
+        let sprite[11] = 62;
+
+        return sprite;
+    }
+
+    function Array GetFSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 8;
+        let sprite[2] = 8;
+        let sprite[3] = 62;
+        let sprite[4] = 73;
+        let sprite[5] = 73;
+        let sprite[6] = 73;
+        let sprite[7] = 73;
+        let sprite[8] = 73;
+        let sprite[9] = 62;
+        let sprite[10] = 8;
+        let sprite[11] = 8;
+
+        return sprite;
+    }
+
+    function Array GetHSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 65;
+        let sprite[4] = 34;
+        let sprite[5] = 20;
+        let sprite[6] = 8;
+        let sprite[7] = 8;
+        let sprite[8] = 20;
+        let sprite[9] = 34;
+        let sprite[10] = 65;
+
+        return sprite;
+    }
+
+    function Array GetTSSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 33;
+        let sprite[4] = 33;
+        let sprite[5] = 33;
+        let sprite[6] = 33;
+        let sprite[7] = 33;
+        let sprite[8] = 33;
+        let sprite[9] = 33;
+        let sprite[10] = 127;
+        let sprite[11] = 64;
+
+        return sprite;
+    }
+
+    function Array GetCHSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 65;
+        let sprite[4] = 65;
+        let sprite[5] = 65;
+        let sprite[6] = 65;
+        let sprite[7] = 126;
+        let sprite[8] = 64;
+        let sprite[9] = 64;
+        let sprite[10] = 64;
+
+        return sprite;
+    }
+
+    function Array GetSHSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 73;
+        let sprite[4] = 73;
+        let sprite[5] = 73;
+        let sprite[6] = 73;
+        let sprite[7] = 73;
+        let sprite[8] = 73;
+        let sprite[9] = 73;
+        let sprite[10] = 127;
+
+        return sprite;
+    }
+
+    function Array GetSCHSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 37;
+        let sprite[4] = 37;
+        let sprite[5] = 37;
+        let sprite[6] = 37;
+        let sprite[7] = 37;
+        let sprite[8] = 37;
+        let sprite[9] = 37;
+        let sprite[10] = 127;
+        let sprite[11] = 64;
+
+        return sprite;
+    }
+
+    function Array GetHARD_CHARSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 3;
+        let sprite[4] = 2;
+        let sprite[5] = 2;
+        let sprite[6] = 62;
+        let sprite[7] = 66;
+        let sprite[8] = 66;
+        let sprite[9] = 66;
+        let sprite[10] = 62;
+
+        return sprite;
+    }
+
+    function Array GetIYSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 65;
+        let sprite[4] = 65;
+        let sprite[5] = 65;
+        let sprite[6] = 79;
+        let sprite[7] = 81;
+        let sprite[8] = 81;
+        let sprite[9] = 81;
+        let sprite[10] = 79;
+
+        return sprite;
+    }
+
+    function Array GetSOFT_CHARSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 1;
+        let sprite[4] = 1;
+        let sprite[5] = 1;
+        let sprite[6] = 63;
+        let sprite[7] = 65;
+        let sprite[8] = 65;
+        let sprite[9] = 65;
+        let sprite[10] = 63;
+
+        return sprite;
+    }
+
+    function Array GetAESprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 30;
+        let sprite[4] = 33;
+        let sprite[5] = 64;
+        let sprite[6] = 64;
+        let sprite[7] = 124;
+        let sprite[8] = 64;
+        let sprite[9] = 65;
+        let sprite[10] = 62;
+
+        return sprite;
+    }
+
+    function Array GetYUSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 57;
+        let sprite[4] = 69;
+        let sprite[5] = 69;
+        let sprite[6] = 69;
+        let sprite[7] = 71;
+        let sprite[8] = 69;
+        let sprite[9] = 69;
+        let sprite[10] = 57;
+
+        return sprite;
+    }
+
+    function Array GetYASprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 126;
+        let sprite[4] = 65;
+        let sprite[5] = 65;
+        let sprite[6] = 65;
+        let sprite[7] = 126;
+        let sprite[8] = 66;
+        let sprite[9] = 65;
+        let sprite[10] = 65;
+
+        return sprite;
     }
 }
