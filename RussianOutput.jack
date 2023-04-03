@@ -81,4 +81,37 @@ class RussianOutput
         do Output.printInt(number);
         return;
     }
+
+    method void PrintLn()
+    {
+        let _y = _y + 1;
+        let _x = 0;
+        let _isShifting = false;
+        return;
+    }
+
+    method void BackSpace()
+    {
+        if (_y = 0)
+        {
+            if (_x = 0)
+            {
+                return;
+            }
+            let _x = _x - 1;
+        }
+        else
+        {
+            if (_x = 0)
+            {
+                let _x = 63;
+                let _y = _y - 1;
+            }
+            else
+            {
+                let _x = _x - 1;
+            }
+        }
+        return;
+    }
 }
