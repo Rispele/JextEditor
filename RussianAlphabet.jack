@@ -435,7 +435,7 @@ class RussianAlphabet
     function Array GetUSprite()
     {
         var Array sprite;
-        let sprite = Array.new(11);
+        let sprite = Array.new(12);
 
         let sprite[0] = 0;
         let sprite[1] = 0;
@@ -456,7 +456,7 @@ class RussianAlphabet
     function Array GetFSprite()
     {
         var Array sprite;
-        let sprite = Array.new(11);
+        let sprite = Array.new(12);
 
         let sprite[0] = 0;
         let sprite[1] = 8;
@@ -497,7 +497,7 @@ class RussianAlphabet
     function Array GetTSSprite()
     {
         var Array sprite;
-        let sprite = Array.new(11);
+        let sprite = Array.new(12);
 
         let sprite[0] = 0;
         let sprite[1] = 0;
@@ -558,7 +558,7 @@ class RussianAlphabet
     function Array GetSCHSprite()
     {
         var Array sprite;
-        let sprite = Array.new(11);
+        let sprite = Array.new(12);
 
         let sprite[0] = 0;
         let sprite[1] = 0;
