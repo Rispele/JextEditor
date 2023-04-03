@@ -4,6 +4,8 @@ class RussianOutput
 
     field RussianAlphabet _alphabet;
     field int _y, _x, _charBuffer;
+    //Так как буквы шириной 8 пикселей, а запись идет только в 16, то нужно понимать, 
+    //когда сдвигать символ, а когда нет
     field boolean _isShifting;
 
     constructor RussianOutput new()
@@ -13,6 +15,9 @@ class RussianOutput
         return this;
     }
 
+    //Устанавливает курсор на позицию
+    //0 <= y < 64
+    //0 <= x < 23
     method void SetCursor(int y, int x)
     {
         if (x > 63) { do Sys.error(1); }
@@ -24,6 +29,7 @@ class RussianOutput
         return;
     }
     
+    //Печатает символ на позиции курсора
     method void PrintChar(char ch)
     {
         var int i, address;
@@ -37,7 +43,9 @@ class RussianOutput
         {
             while(i < 11)
             {
-                let _charBuffer = Memory.peek(32 * i + address);
+                //Получаем пиксели симолов. Модулем убираем символ справа
+                let _charBuffer = MathExtensions.Mod(Memory.peek(32 * i + address), 256);
+                //Чтобы сдвинуть букву на 8 пикселей нужно умножить каждое значение спрайта на 2^8 = 256
                 let _charBuffer = sprite[i] * 256 + MathExtensions.Mod(_charBuffer, 256);
                 do Memory.poke(32 * i + address, _charBuffer);
                 let i = i + 1;
@@ -47,7 +55,9 @@ class RussianOutput
         {
             while(i < 11)
             {
+                //Получаем пиксели симолов. Делением убираем символ слева
                 let _charBuffer = Memory.peek(32 * i + address) / 256;
+                //Сдвигаем полученные символы вправо, а слева пишем символ
                 let _charBuffer = _charBuffer * 256 + sprite[i];
                 do Memory.poke(32 * i + address, _charBuffer);
                 let i = i + 1;
@@ -57,6 +67,7 @@ class RussianOutput
         return;
     }
 
+    //Выводит строку. Не проверяет выход за экран.
     method void PrintString(String s)
     {
         var int i, len;
@@ -75,6 +86,7 @@ class RussianOutput
         return;
     }
 
+    //Выводит число. Не проверяет выход за экран.
     method void PrintInt(int number)
     {
         do Output.moveCursor(_y, _x);
@@ -82,6 +94,7 @@ class RussianOutput
         return;
     }
 
+    //Перенос на новую строку, если возможно.
     method void PrintLn()
     {
         let _y = _y + 1;
@@ -90,6 +103,7 @@ class RussianOutput
         return;
     }
 
+    //Сдвигает курсор влево.
     method void BackSpace()
     {
         if (_y = 0)
