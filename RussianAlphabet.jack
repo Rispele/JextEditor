@@ -21,7 +21,20 @@ class RussianAlphabet
         let sprite = RussianAlphabet.GetBSprite();
         let _alphabet[B] = Glyph.new(B, sprite);
 
+        let sprite = RussianAlphabet.GetVSprite();
+        let _alphabet[V] = Glyph.new(V, sprite);
+
+        let sprite = RussianAlphabet.GetGSprite();
+        let _alphabet[G] = Glyph.new(G, sprite);
+
         return this;
+    }
+
+    method Array GetSprite(char ch)
+    {
+        var Glyph glyph;
+        let glyph = _alphabet[ch];
+        return glyph.GetSprite();
     }
 
     function void InitializeCharValues()
