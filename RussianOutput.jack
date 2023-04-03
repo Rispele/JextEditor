@@ -54,7 +54,31 @@ class RussianOutput
             }
         }
 
-        do sprite.dispose();
+        return;
+    }
+
+    method void PrintString(String s)
+    {
+        var int i, len;
+        let i = 0;
+        let len = s.length();
+        while (i < len)
+        {
+            do PrintChar(s.charAt(i));
+            let i = i + 1;
+            let _x = _x + 1;
+            let _isShifting = MathExtensions.Mod(_x, 2);
+        }
+        let _y = MathExtensions.Mod(_y + (_x / 64), 23);
+        let _x = MathExtensions.Mod(_x, 64);
+
+        return;
+    }
+
+    method void PrintInt(int number)
+    {
+        do Output.moveCursor(_y, _x);
+        do Output.printInt(number);
         return;
     }
 }
