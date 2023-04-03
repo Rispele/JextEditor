@@ -128,4 +128,10 @@ class RussianOutput
         }
         return;
     }
+
+    method void Space()
+    {
+        do SetCursor(_y, _x + 1);
+        return;
+    }
 }

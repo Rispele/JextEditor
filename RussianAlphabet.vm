@@ -31,12 +31,408 @@ pop temp 0
 pop pointer 1
 push temp 0
 pop that 0
+call RussianAlphabet.GetVSprite 0
+pop local 0
+push static 2
+push this 0
+add
+push static 2
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetGSprite 0
+pop local 0
+push static 3
+push this 0
+add
+push static 3
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetDSprite 0
+pop local 0
+push static 4
+push this 0
+add
+push static 4
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetESprite 0
+pop local 0
+push static 5
+push this 0
+add
+push static 5
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetDSprite 0
+pop local 0
+push static 4
+push this 0
+add
+push static 4
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetYOSprite 0
+pop local 0
+push static 6
+push this 0
+add
+push static 6
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetZHSprite 0
+pop local 0
+push static 7
+push this 0
+add
+push static 7
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetZSprite 0
+pop local 0
+push static 8
+push this 0
+add
+push static 8
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetISprite 0
+pop local 0
+push static 9
+push this 0
+add
+push static 9
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetYSprite 0
+pop local 0
+push static 10
+push this 0
+add
+push static 10
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetKSprite 0
+pop local 0
+push static 11
+push this 0
+add
+push static 11
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetLSprite 0
+pop local 0
+push static 12
+push this 0
+add
+push static 12
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetMSprite 0
+pop local 0
+push static 13
+push this 0
+add
+push static 13
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetNSprite 0
+pop local 0
+push static 14
+push this 0
+add
+push static 14
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetOSprite 0
+pop local 0
+push static 15
+push this 0
+add
+push static 15
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetPSprite 0
+pop local 0
+push static 16
+push this 0
+add
+push static 16
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetRSprite 0
+pop local 0
+push static 17
+push this 0
+add
+push static 17
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetSSprite 0
+pop local 0
+push static 18
+push this 0
+add
+push static 18
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetTSprite 0
+pop local 0
+push static 19
+push this 0
+add
+push static 19
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetUSprite 0
+pop local 0
+push static 20
+push this 0
+add
+push static 20
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetFSprite 0
+pop local 0
+push static 21
+push this 0
+add
+push static 21
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetHSprite 0
+pop local 0
+push static 22
+push this 0
+add
+push static 22
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetTSSprite 0
+pop local 0
+push static 23
+push this 0
+add
+push static 23
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetCHSprite 0
+pop local 0
+push static 24
+push this 0
+add
+push static 24
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetSHSprite 0
+pop local 0
+push static 25
+push this 0
+add
+push static 25
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetSCHSprite 0
+pop local 0
+push static 26
+push this 0
+add
+push static 26
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetHARD_CHARSprite 0
+pop local 0
+push static 27
+push this 0
+add
+push static 27
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetIYSprite 0
+pop local 0
+push static 28
+push this 0
+add
+push static 28
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetSOFT_CHARSprite 0
+pop local 0
+push static 29
+push this 0
+add
+push static 29
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetAESprite 0
+pop local 0
+push static 30
+push this 0
+add
+push static 30
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetYUSprite 0
+pop local 0
+push static 31
+push this 0
+add
+push static 31
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+call RussianAlphabet.GetYASprite 0
+pop local 0
+push static 32
+push this 0
+add
+push static 32
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
 push pointer 0
+return
+function RussianAlphabet.GetSprite 1
+push argument 0
+pop pointer 0
+push argument 1
+push this 0
+add
+pop pointer 1
+push that 0
+pop local 0
+push local 0
+call Glyph.GetSprite 1
 return
 function RussianAlphabet.InitializeCharValues 0
 push constant 70
 pop static 0
-push constant 60
+push constant 44
 pop static 1
 push constant 68
 pop static 2
@@ -94,7 +490,7 @@ push constant 83
 pop static 28
 push constant 77
 pop static 29
-push constant 96
+push constant 39
 pop static 30
 push constant 46
 pop static 31
@@ -251,7 +647,7 @@ pop that 0
 push constant 6
 push local 0
 add
-push constant 1
+push constant 65
 pop temp 0
 pop pointer 1
 push temp 0
@@ -259,7 +655,7 @@ pop that 0
 push constant 7
 push local 0
 add
-push constant 1
+push constant 65
 pop temp 0
 pop pointer 1
 push temp 0
@@ -267,7 +663,7 @@ pop that 0
 push constant 8
 push local 0
 add
-push constant 1
+push constant 65
 pop temp 0
 pop pointer 1
 push temp 0
@@ -275,7 +671,7 @@ pop that 0
 push constant 9
 push local 0
 add
-push constant 1
+push constant 65
 pop temp 0
 pop pointer 1
 push temp 0

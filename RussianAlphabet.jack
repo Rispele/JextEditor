@@ -7,7 +7,6 @@ class RussianAlphabet
                 SH, SCH, HARD_CHAR, IY, 
                 SOFT_CHAR, AE, YU, YA;
 
-    //Чтобы сдвинуть букву на 8 пикселей нужно умножить каждое значение спрайта на 2^8 = 256
     constructor RussianAlphabet new()
     {
         var Array sprite;

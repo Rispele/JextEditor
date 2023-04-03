@@ -36,39 +36,6 @@ class Main
             }
             let prevCh = ch;
         }
-        //let sprite = alphabet.GetSprite(ch);
-
-        /*let i = 0;
-        while(i < 11)
-        {
-            do Memory.poke(32 * i + screen_address, sprite[i]);
-            let i = i + 1;
-        }
-
-        let i = 0;
-        while(i < 11)
-        {
-            let buffer = Memory.peek(32 * i + screen_address);
-            let buffer = sprite[i] * 256 + buffer;
-            do Memory.poke(32 * i + screen_address, buffer);
-            let i = i + 1;
-        }
-
-        do Memory.poke(screen_address, sprite[0]);
-        do Memory.poke(screen_address + 32, sprite[1]);
-        do Memory.poke(screen_address + 64, sprite[2]);
-        do Memory.poke(screen_address + 96, sprite[3]);
-        do Memory.poke(screen_address + 128, sprite[4]);
-        do Memory.poke(screen_address + 160, sprite[5]);
-        do Memory.poke(screen_address + 192, sprite[6]);
-        do Memory.poke(screen_address + 224, sprite[7]);
-        do Memory.poke(screen_address + 256, sprite[8]);
-        do Memory.poke(screen_address + 288, sprite[9]);
-        do Memory.poke(screen_address + 320, sprite[10]);*/
-
-
-        
-
         return;
     }
 }
