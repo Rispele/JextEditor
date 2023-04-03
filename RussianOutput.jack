@@ -1,0 +1,60 @@
+class RussianOutput
+{
+    static int _screenAddress;
+
+    field RussianAlphabet _alphabet;
+    field int _y, _x, _charBuffer;
+    field boolean _isShifting;
+
+    constructor RussianOutput new()
+    {
+        let _screenAddress = 16384;
+        let _alphabet = RussianAlphabet.new();
+        return this;
+    }
+
+    method void SetCursor(int y, int x)
+    {
+        if (x > 63) { do Sys.error(1); }
+        if (y > 22) { do Sys.error(1); }
+
+        let _y = y;
+        let _x = x;
+        let _isShifting = MathExtensions.Mod(_x, 2);
+        return;
+    }
+    
+    method void PrintChar(char ch)
+    {
+        var int i, address;
+        var Array sprite;
+
+        let i = 0;
+        let address = _screenAddress + (_y * 32 * 11) + (_x / 2); 
+        let sprite = _alphabet.GetSprite(ch);
+
+        if (_isShifting)
+        {
+            while(i < 11)
+            {
+                let _charBuffer = Memory.peek(32 * i + address);
+                let _charBuffer = sprite[i] * 256 + MathExtensions.Mod(_charBuffer, 256);
+                do Memory.poke(32 * i + address, _charBuffer);
+                let i = i + 1;
+            }
+        }
+        else
+        {
+            while(i < 11)
+            {
+                let _charBuffer = Memory.peek(32 * i + address) / 256;
+                let _charBuffer = _charBuffer * 256 + sprite[i];
+                do Memory.poke(32 * i + address, _charBuffer);
+                let i = i + 1;
+            }
+        }
+
+        do sprite.dispose();
+        return;
+    }
+}
