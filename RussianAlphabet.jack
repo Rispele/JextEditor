@@ -18,6 +18,9 @@ class RussianAlphabet
         let sprite = RussianAlphabet.GetASprite();
         let _alphabet[A] = Glyph.new(A, sprite); 
 
+        let sprite = RussianAlphabet.GetBSprite();
+        let _alphabet[B] = Glyph.new(B, sprite);
+
         return this;
     }
 
@@ -28,6 +31,34 @@ class RussianAlphabet
         let V = 68;
         let G = 85;
         let D = 76;
+        let E = 84;
+        let YO = 96;
+        let ZH = 59;
+        let Z = 80;
+        let I = 66;
+        let Y = 81;
+        let K = 82;
+        let L = 75;
+        let M = 86;
+        let N = 89;
+        let O = 74;
+        let P = 71;
+        let R = 72;
+        let S = 67;
+        let T = 78;
+        let U = 69;
+        let F = 65;
+        let H = 91;
+        let TS = 87;
+        let CH = 88;
+        let SH = 73;
+        let SCH = 79;
+        let HARD_CHAR = 93;
+        let IY = 83;
+        let SOFT_CHAR = 77;
+        let AE = 96;
+        let YU = 46;
+        let YA = 90;
         return;
     }
 
