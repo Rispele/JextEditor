@@ -84,4 +84,10 @@ class RussianOutput
         let _x = _x - (to - from);
         return;
     }
+
+    method void dispose()
+    {
+        do _alphabet.dispose();
+        return;
+    }
 }

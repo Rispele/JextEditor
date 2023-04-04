@@ -19,4 +19,10 @@ class Glyph
     {
         return _value;
     }
+
+    method void dispose()
+    {
+        do _sprite.dispose();
+        return;
+    }
 }

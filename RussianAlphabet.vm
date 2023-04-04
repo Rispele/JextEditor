@@ -655,6 +655,14 @@ push static 32
 eq
 or
 return
+function RussianAlphabet.dispose 0
+push argument 0
+pop pointer 0
+push this 0
+call Alphabet.dispose 1
+pop temp 0
+push constant 0
+return
 function RussianAlphabet.GetASprite 1
 push constant 11
 call Array.new 1

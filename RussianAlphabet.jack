@@ -183,6 +183,12 @@ class RussianAlphabet
             | (ch = AE) | (ch = YU) | (ch = YA);
     }
 
+    method void dispose()
+    {
+        do _alphabet.dispose();
+        return;
+    }
+
     function Array GetASprite()
     {
         var Array sprite;

@@ -198,3 +198,11 @@ sub
 pop this 2
 push constant 0
 return
+function RussianOutput.dispose 0
+push argument 0
+pop pointer 0
+push this 0
+call RussianAlphabet.dispose 1
+pop temp 0
+push constant 0
+return

@@ -26,4 +26,20 @@ class Alphabet
 
         return glyph.GetSprite();
     }
+
+    method void dispose()
+    {
+        var Glyph glyph;
+        var int i, len;
+        let i = 0;
+        let len = _glyphs.length();
+        while(i < len)
+        {
+            let glyph = _glyphs[i];
+            do glyph.dispose();
+            let i = i + 1;
+        }
+        do _glyphs.dispose();
+        return;
+    }
 }

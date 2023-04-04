@@ -1,3 +1,4 @@
+//Безопасный к выходу за границы класс
 class RussianScreen
 {
     field int _screenY, _screenX;
@@ -29,6 +30,7 @@ class RussianScreen
         return this;
     }
 
+    //Устанавливает курсор.
     method void SetCursor(int x, int y)
     {
         if (x + 1 > _width | x < 0)
@@ -48,6 +50,7 @@ class RussianScreen
         return;
     }
 
+    //Сдвигает курсор на shift позиций вправо.
     method void MoveCursor(int shift)
     {
         var int newY, newX;
@@ -70,10 +73,10 @@ class RussianScreen
             let _x = newX;
         }
         do _output.SetCursor(_screenY + _y, _screenX + _x);
-        
         return;
     }
 
+    //Печатает символ. 
     method void PrintChar(char ch)
     {
         if (ch = 32)
@@ -83,7 +86,7 @@ class RussianScreen
         }
         if ((ch - 47 > 0) & (ch - 47 < 11))
         {
-            do Output.moveCursor(_screenY + _y, _screenX + _x);
+            do UpdateDefaultOutput();
             do Output.printInt(ch - 48);
         }
         else
@@ -100,7 +103,7 @@ class RussianScreen
                 }
                 else
                 {
-                    do Output.moveCursor(_screenY + _y, _screenX + _x);
+                    do UpdateDefaultOutput();
                     do Output.printChar(ch);
                 }
             }
@@ -128,6 +131,7 @@ class RussianScreen
         return;
     }
 
+    //Печатает строку
     method void PrintString(String str)
     {   
         var int i, len;
@@ -144,6 +148,7 @@ class RussianScreen
         return;
     }
 
+    //Печатает число
     method void PrintInt(int number)
     {
         var String str;
@@ -151,6 +156,19 @@ class RussianScreen
         do str.setInt(number);
         do PrintString(str);
         do str.dispose();
+        return;
+    }
+
+    //Устанавливает курсор дефолтного Output на позицию этого.
+    method void UpdateDefaultOutput()
+    {
+        do Output.moveCursor(_screenY + _y, _screenX + _x);
+        return;
+    }
+
+    method void dispose()
+    {
+        do _output.dispose();
         return;
     }
 }
