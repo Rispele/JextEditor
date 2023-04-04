@@ -272,20 +272,19 @@ class RussianAlphabet
     function Array GetDSprite()
     {
         var Array sprite;
-        let sprite = Array.new(12);
+        let sprite = Array.new(11);
 
         let sprite[0] = 0;
         let sprite[1] = 0;
-        let sprite[2] = 0;
-        let sprite[3] = 56;
+        let sprite[2] = 56;
+        let sprite[3] = 36;
         let sprite[4] = 36;
         let sprite[5] = 36;
         let sprite[6] = 36;
-        let sprite[7] = 36;
+        let sprite[7] = 34;
         let sprite[8] = 34;
-        let sprite[9] = 34;
-        let sprite[10] = 127;
-        let sprite[11] = 65;
+        let sprite[9] = 127;
+        let sprite[10] = 65;
 
         return sprite;
     }
@@ -593,20 +592,19 @@ class RussianAlphabet
     function Array GetUSprite()
     {
         var Array sprite;
-        let sprite = Array.new(12);
+        let sprite = Array.new(11);
 
         let sprite[0] = 0;
         let sprite[1] = 0;
-        let sprite[2] = 0;
+        let sprite[2] = 65;
         let sprite[3] = 65;
         let sprite[4] = 65;
         let sprite[5] = 65;
-        let sprite[6] = 65;
-        let sprite[7] = 98;
-        let sprite[8] = 92;
-        let sprite[9] = 64;
-        let sprite[10] = 65;
-        let sprite[11] = 62;
+        let sprite[6] = 98;
+        let sprite[7] = 92;
+        let sprite[8] = 64;
+        let sprite[9] = 65;
+        let sprite[10] = 62;
 
         return sprite;
     }
@@ -614,20 +612,19 @@ class RussianAlphabet
     function Array GetFSprite()
     {
         var Array sprite;
-        let sprite = Array.new(12);
+        let sprite = Array.new(11);
 
-        let sprite[0] = 0;
+        let sprite[0] = 8;
         let sprite[1] = 8;
-        let sprite[2] = 8;
-        let sprite[3] = 62;
+        let sprite[2] = 62;
+        let sprite[3] = 73;
         let sprite[4] = 73;
         let sprite[5] = 73;
         let sprite[6] = 73;
         let sprite[7] = 73;
-        let sprite[8] = 73;
-        let sprite[9] = 62;
+        let sprite[8] = 62;
+        let sprite[9] = 8;
         let sprite[10] = 8;
-        let sprite[11] = 8;
 
         return sprite;
     }
@@ -655,20 +652,19 @@ class RussianAlphabet
     function Array GetTSSprite()
     {
         var Array sprite;
-        let sprite = Array.new(12);
+        let sprite = Array.new(11);
 
         let sprite[0] = 0;
         let sprite[1] = 0;
-        let sprite[2] = 0;
+        let sprite[2] = 33;
         let sprite[3] = 33;
         let sprite[4] = 33;
         let sprite[5] = 33;
         let sprite[6] = 33;
         let sprite[7] = 33;
         let sprite[8] = 33;
-        let sprite[9] = 33;
-        let sprite[10] = 127;
-        let sprite[11] = 64;
+        let sprite[9] = 127;
+        let sprite[10] = 64;
 
         return sprite;
     }
@@ -716,20 +712,19 @@ class RussianAlphabet
     function Array GetSCHSprite()
     {
         var Array sprite;
-        let sprite = Array.new(12);
+        let sprite = Array.new(11);
 
         let sprite[0] = 0;
         let sprite[1] = 0;
-        let sprite[2] = 0;
+        let sprite[2] = 37;
         let sprite[3] = 37;
         let sprite[4] = 37;
         let sprite[5] = 37;
         let sprite[6] = 37;
         let sprite[7] = 37;
         let sprite[8] = 37;
-        let sprite[9] = 37;
-        let sprite[10] = 127;
-        let sprite[11] = 64;
+        let sprite[9] = 127;
+        let sprite[10] = 64;
 
         return sprite;
     }
