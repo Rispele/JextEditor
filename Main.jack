@@ -2,7 +2,14 @@ class Main
 {
     function void main()
     {
-        var RussianOutput output;
+        var RussianScreen screen;
+        let screen = RussianScreen.new(10, 10, 10, 10);
+
+        //do screen.PrintChar(70);
+        do screen.PrintString("cjcb ,b,e 24 YF 7 ");
+        do screen.PrintInt(32000);
+        
+        /*var RussianOutput output;
         var char ch, prevCh;
         var int i;
         let i = 0;
@@ -35,7 +42,7 @@ class Main
                 let i = i + 1;
             }
             let prevCh = ch;
-        }
+        }*/
         return;
     }
 }

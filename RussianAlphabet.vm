@@ -31,6 +31,16 @@ pop temp 0
 pop pointer 1
 push temp 0
 pop that 0
+push constant 60
+push this 0
+add
+push constant 60
+push local 0
+call Glyph.new 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
 call RussianAlphabet.GetVSprite 0
 pop local 0
 push static 2
@@ -497,6 +507,153 @@ pop static 31
 push constant 90
 pop static 32
 push constant 0
+return
+function RussianAlphabet.IsLowerCaseInterpretation 0
+push argument 0
+push constant 32
+sub
+call RussianAlphabet.IsRussianChar 1
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+not
+return
+label IF_FALSE0
+push constant 0
+return
+function RussianAlphabet.IsRussianChar 0
+push argument 0
+push static 0
+eq
+push argument 0
+push static 1
+eq
+or
+push argument 0
+push static 2
+eq
+or
+push argument 0
+push static 3
+eq
+or
+push argument 0
+push static 4
+eq
+or
+push argument 0
+push static 5
+eq
+or
+push argument 0
+push static 6
+eq
+or
+push argument 0
+push static 7
+eq
+or
+push argument 0
+push static 8
+eq
+or
+push argument 0
+push static 9
+eq
+or
+push argument 0
+push static 10
+eq
+or
+push argument 0
+push static 11
+eq
+or
+push argument 0
+push static 12
+eq
+or
+push argument 0
+push static 13
+eq
+or
+push argument 0
+push static 14
+eq
+or
+push argument 0
+push static 15
+eq
+or
+push argument 0
+push static 16
+eq
+or
+push argument 0
+push static 17
+eq
+or
+push argument 0
+push static 18
+eq
+or
+push argument 0
+push static 19
+eq
+or
+push argument 0
+push static 20
+eq
+or
+push argument 0
+push static 21
+eq
+or
+push argument 0
+push static 22
+eq
+or
+push argument 0
+push static 23
+eq
+or
+push argument 0
+push static 24
+eq
+or
+push argument 0
+push static 25
+eq
+or
+push argument 0
+push static 26
+eq
+or
+push argument 0
+push static 27
+eq
+or
+push argument 0
+push static 28
+eq
+or
+push argument 0
+push static 29
+eq
+or
+push argument 0
+push static 30
+eq
+or
+push argument 0
+push static 31
+eq
+or
+push argument 0
+push static 32
+eq
+or
 return
 function RussianAlphabet.GetASprite 1
 push constant 11

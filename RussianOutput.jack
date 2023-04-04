@@ -4,6 +4,7 @@ class RussianOutput
 
     field RussianAlphabet _alphabet;
     field int _y, _x, _charBuffer;
+
     //Так как буквы шириной 8 пикселей, а запись идет только в 16, то нужно понимать, 
     //когда сдвигать символ, а когда нет
     field boolean _isShifting;
@@ -20,12 +21,12 @@ class RussianOutput
     //0 <= x < 23
     method void SetCursor(int y, int x)
     {
-        if (x > 63) { do Sys.error(1); }
-        if (y > 22) { do Sys.error(1); }
+        if (x > 63 | _x < 0) { do Sys.error(1); }
+        if (y > 22 | _y < 0) { do Sys.error(1); }
 
         let _y = y;
         let _x = x;
-        let _isShifting = MathExtensions.Mod(_x, 2);
+        let _isShifting = MathExtensions.Mod(x, 2);
         return;
     }
     
@@ -68,70 +69,19 @@ class RussianOutput
     }
 
     //Выводит строку. Не проверяет выход за экран.
-    method void PrintString(String s)
+    method void PrintString(String s, int from, int to)
     {
-        var int i, len;
-        let i = 0;
-        let len = s.length();
-        while (i < len)
+        var int i;
+        let i = from;
+        while (i < to)
         {
             do PrintChar(s.charAt(i));
             let i = i + 1;
             let _x = _x + 1;
             let _isShifting = MathExtensions.Mod(_x, 2);
         }
-        let _y = MathExtensions.Mod(_y + (_x / 64), 23);
-        let _x = MathExtensions.Mod(_x, 64);
 
-        return;
-    }
-
-    //Выводит число. Не проверяет выход за экран.
-    method void PrintInt(int number)
-    {
-        do Output.moveCursor(_y, _x);
-        do Output.printInt(number);
-        return;
-    }
-
-    //Перенос на новую строку, если возможно.
-    method void PrintLn()
-    {
-        let _y = _y + 1;
-        let _x = 0;
-        let _isShifting = false;
-        return;
-    }
-
-    //Сдвигает курсор влево.
-    method void BackSpace()
-    {
-        if (_y = 0)
-        {
-            if (_x = 0)
-            {
-                return;
-            }
-            let _x = _x - 1;
-        }
-        else
-        {
-            if (_x = 0)
-            {
-                let _x = 63;
-                let _y = _y - 1;
-            }
-            else
-            {
-                let _x = _x - 1;
-            }
-        }
-        return;
-    }
-
-    method void Space()
-    {
-        do SetCursor(_y, _x + 1);
+        let _x = _x - (to - from);
         return;
     }
 }

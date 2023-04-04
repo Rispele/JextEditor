@@ -1,0 +1,156 @@
+class RussianScreen
+{
+    field int _screenY, _screenX;
+    field int _y, _x;
+    field int _height, _width;
+    field RussianOutput _output;
+
+    constructor RussianScreen new(int screenY, int screenX, int height, int width)
+    {
+        if (screenY + height > 22 | screenX + width > 63)
+        {
+           do Sys.error(1);
+        }
+        if (screenY < 0 | screenX < 0 | width < 1 | height < 1)
+        {
+           do Sys.error(1);
+        }
+
+        let _screenY = screenY;
+        let _screenX = screenX;
+        let _height = height;
+        let _width = width;
+
+        let _y = 0;
+        let _x = 0;
+        let _output = RussianOutput.new();
+        do _output.SetCursor(_screenY, _screenX);
+
+        return this;
+    }
+
+    method void SetCursor(int x, int y)
+    {
+        if (x + 1 > _width | x < 0)
+        {
+            do Sys.error(1);
+        }
+        if (y + 1 = _height | y < 0)
+        {
+            do Sys.error(1);
+        }
+
+        let _x = x;
+        let _y = y;
+
+        do _output.SetCursor(_screenY + _y, _screenX + _x);
+
+        return;
+    }
+
+    method void MoveCursor(int shift)
+    {
+        var int newY, newX;
+        let newX = _x + shift;
+        if (newX + 1 > _width)
+        {
+            let newY = _y + (newX / _width);
+            if (newY + 1 > _height)
+            {
+                let _y = MathExtensions.Mod(newY, _height);
+            }
+            else
+            {
+                let _y = newY;
+            }
+            let _x = MathExtensions.Mod(newX, _width);
+        }
+        else
+        {
+            let _x = newX;
+        }
+        do _output.SetCursor(_screenY + _y, _screenX + _x);
+        
+        return;
+    }
+
+    method void PrintChar(char ch)
+    {
+        if (ch = 32)
+        {
+            do MoveCursor(1);
+            return;
+        }
+        if ((ch - 47 > 0) & (ch - 47 < 11))
+        {
+            do Output.moveCursor(_screenY + _y, _screenX + _x);
+            do Output.printInt(ch - 48);
+        }
+        else
+        {
+            if (RussianAlphabet.IsRussianChar(ch))
+            {
+                do _output.PrintChar(ch);
+            }
+            else
+            {
+                if (RussianAlphabet.IsLowerCaseInterpretation(ch))
+                {
+                    do _output.PrintChar(ch - 32);
+                }
+                else
+                {
+                    do Output.moveCursor(_screenY + _y, _screenX + _x);
+                    do Output.printString("#");
+                }
+            }
+        }  
+        
+        if (_y + 1 = _height & _x + 1 = _width)
+        {
+            let _x = 0;
+            let _y = 0;
+        }
+        else 
+        {
+            if (_x + 1 = _width)
+            {
+                let _y = _y + 1;
+                let _x = 0;
+            }
+            else
+            {
+                let _x = _x + 1;
+            }
+        }
+        do _output.SetCursor(_screenY + _y, _screenX + _x);
+
+        return;
+    }
+
+    method void PrintString(String str)
+    {   
+        var int i, len;
+        var char ch;
+        let i = 0;
+        let len = str.length();
+        while(i < len)
+        {
+            let ch = str.charAt(i);
+            do PrintChar(ch);      
+            let i = i + 1;  
+        }
+
+        return;
+    }
+
+    method void PrintInt(int number)
+    {
+        var String str;
+        let str = String.new(5);
+        do str.setInt(number);
+        do PrintString(str);
+        do str.dispose();
+        return;
+    }
+}

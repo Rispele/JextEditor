@@ -19,6 +19,7 @@ class RussianAlphabet
 
         let sprite = RussianAlphabet.GetBSprite();
         let _alphabet[B] = Glyph.new(B, sprite);
+        let _alphabet[60] = Glyph.new(60, sprite);
 
         let sprite = RussianAlphabet.GetVSprite();
         let _alphabet[V] = Glyph.new(V, sprite);
@@ -162,6 +163,24 @@ class RussianAlphabet
         let YU = 46;
         let YA = 90;
         return;
+    }
+
+    function boolean IsLowerCaseInterpretation(char ch)
+    {
+        if (RussianAlphabet.IsRussianChar(ch - 32))
+        {
+            return true;
+        }
+        return false;
+    }
+
+    function boolean IsRussianChar(char ch)
+    {
+        return (ch = A) | (ch = B) | (ch = V) | (ch = G) | (ch = D) | (ch = E) | (ch = YO) | (ch = ZH)
+            | (ch = Z) | (ch = I) | (ch = Y) | (ch = K) | (ch = L) | (ch = M) | (ch = N) | (ch = O)
+            | (ch = P) | (ch = R) | (ch = S) | (ch = T) | (ch = U) | (ch = F) | (ch = H) | (ch = TS)
+            | (ch = CH) | (ch = SH) | (ch = SCH) | (ch = HARD_CHAR) | (ch = IY) | (ch = SOFT_CHAR)
+            | (ch = AE) | (ch = YU) | (ch = YA);
     }
 
     function Array GetASprite()

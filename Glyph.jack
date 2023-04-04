@@ -19,14 +19,4 @@ class Glyph
     {
         return _value;
     }
-
-    /*method void SetRow(int index, int value)
-    {
-        if (index > 10)
-        {
-            do Sys.error(1);
-        }
-        let rows[index] = value;
-        return;
-    }*/
 }
