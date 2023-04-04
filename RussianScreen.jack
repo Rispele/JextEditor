@@ -101,7 +101,7 @@ class RussianScreen
                 else
                 {
                     do Output.moveCursor(_screenY + _y, _screenX + _x);
-                    do Output.printString("#");
+                    do Output.printString(ch);
                 }
             }
         }  
