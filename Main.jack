@@ -6,7 +6,7 @@ class Main
         let screen = RussianScreen.new(10, 10, 10, 10);
 
         //do screen.PrintChar(70);
-        do screen.PrintString("cjcb ,b,e 24 YF 7 ");
+        do screen.PrintString("cjcb ,b,e 24 YF 7 _");
         do screen.PrintInt(32000);
         
         /*var RussianOutput output;
