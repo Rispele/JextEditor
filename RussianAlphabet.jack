@@ -19,7 +19,6 @@ class RussianAlphabet
 
         let sprite = RussianAlphabet.GetBSprite();
         let _alphabet[B] = Glyph.new(B, sprite);
-        let _alphabet[60] = Glyph.new(60, sprite);
 
         let sprite = RussianAlphabet.GetVSprite();
         let _alphabet[V] = Glyph.new(V, sprite);
