@@ -1,56 +1,70 @@
-function Main.main 1
+function Main.main 4
 push constant 10
 push constant 10
 push constant 10
 push constant 10
 call RussianScreen.new 4
 pop local 0
-push local 0
-push constant 19
-call String.new 1
-push constant 99
-call String.appendChar 2
-push constant 106
-call String.appendChar 2
-push constant 99
-call String.appendChar 2
-push constant 98
-call String.appendChar 2
-push constant 32
-call String.appendChar 2
-push constant 44
-call String.appendChar 2
-push constant 98
-call String.appendChar 2
-push constant 44
-call String.appendChar 2
-push constant 101
-call String.appendChar 2
-push constant 32
-call String.appendChar 2
-push constant 50
-call String.appendChar 2
-push constant 52
-call String.appendChar 2
-push constant 32
-call String.appendChar 2
-push constant 89
-call String.appendChar 2
-push constant 70
-call String.appendChar 2
-push constant 32
-call String.appendChar 2
-push constant 55
-call String.appendChar 2
-push constant 32
-call String.appendChar 2
-push constant 95
-call String.appendChar 2
-call RussianScreen.PrintString 2
+push constant 0
+pop local 1
+push constant 1
+neg
+pop local 2
+push constant 0
+pop local 3
+label WHILE_EXP0
+push constant 0
+not
+not
+if-goto WHILE_END0
+call Keyboard.keyPressed 0
+pop local 1
+push local 2
+push local 1
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 100
+call Sys.wait 1
 pop temp 0
+call Keyboard.keyPressed 0
+pop local 1
+label IF_FALSE0
+label WHILE_EXP1
+push local 1
+push constant 0
+eq
+not
+if-goto WHILE_END1
+call Keyboard.keyPressed 0
+pop local 1
+goto WHILE_EXP1
+label WHILE_END1
+push local 1
+push constant 130
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push local 3
+push constant 1
+sub
+pop local 3
+goto IF_END1
+label IF_FALSE1
 push local 0
-push constant 32000
-call RussianScreen.PrintInt 2
+push local 1
+call RussianScreen.PrintChar 2
 pop temp 0
+push local 3
+push constant 1
+add
+pop local 3
+label IF_END1
+push local 1
+pop local 2
+goto WHILE_EXP0
+label WHILE_END0
 push constant 0
 return
