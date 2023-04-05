@@ -1040,7 +1040,7 @@ pop that 0
 push local 0
 return
 function RussianAlphabet.GetDSprite 1
-push constant 12
+push constant 11
 call Array.new 1
 pop local 0
 push constant 0
@@ -1062,7 +1062,7 @@ pop that 0
 push constant 2
 push local 0
 add
-push constant 0
+push constant 56
 pop temp 0
 pop pointer 1
 push temp 0
@@ -1070,7 +1070,7 @@ pop that 0
 push constant 3
 push local 0
 add
-push constant 56
+push constant 36
 pop temp 0
 pop pointer 1
 push temp 0
@@ -1102,7 +1102,7 @@ pop that 0
 push constant 7
 push local 0
 add
-push constant 36
+push constant 34
 pop temp 0
 pop pointer 1
 push temp 0
@@ -1118,20 +1118,12 @@ pop that 0
 push constant 9
 push local 0
 add
-push constant 34
-pop temp 0
-pop pointer 1
-push temp 0
-pop that 0
-push constant 10
-push local 0
-add
 push constant 127
 pop temp 0
 pop pointer 1
 push temp 0
 pop that 0
-push constant 11
+push constant 10
 push local 0
 add
 push constant 65
@@ -2552,7 +2544,7 @@ pop that 0
 push local 0
 return
 function RussianAlphabet.GetUSprite 1
-push constant 12
+push constant 11
 call Array.new 1
 pop local 0
 push constant 0
@@ -2574,7 +2566,7 @@ pop that 0
 push constant 2
 push local 0
 add
-push constant 0
+push constant 65
 pop temp 0
 pop pointer 1
 push temp 0
@@ -2606,7 +2598,7 @@ pop that 0
 push constant 6
 push local 0
 add
-push constant 65
+push constant 98
 pop temp 0
 pop pointer 1
 push temp 0
@@ -2614,7 +2606,7 @@ pop that 0
 push constant 7
 push local 0
 add
-push constant 98
+push constant 92
 pop temp 0
 pop pointer 1
 push temp 0
@@ -2622,7 +2614,7 @@ pop that 0
 push constant 8
 push local 0
 add
-push constant 92
+push constant 64
 pop temp 0
 pop pointer 1
 push temp 0
@@ -2630,20 +2622,12 @@ pop that 0
 push constant 9
 push local 0
 add
-push constant 64
-pop temp 0
-pop pointer 1
-push temp 0
-pop that 0
-push constant 10
-push local 0
-add
 push constant 65
 pop temp 0
 pop pointer 1
 push temp 0
 pop that 0
-push constant 11
+push constant 10
 push local 0
 add
 push constant 62
@@ -2654,13 +2638,13 @@ pop that 0
 push local 0
 return
 function RussianAlphabet.GetFSprite 1
-push constant 12
+push constant 11
 call Array.new 1
 pop local 0
 push constant 0
 push local 0
 add
-push constant 0
+push constant 8
 pop temp 0
 pop pointer 1
 push temp 0
@@ -2676,7 +2660,7 @@ pop that 0
 push constant 2
 push local 0
 add
-push constant 8
+push constant 62
 pop temp 0
 pop pointer 1
 push temp 0
@@ -2684,7 +2668,7 @@ pop that 0
 push constant 3
 push local 0
 add
-push constant 62
+push constant 73
 pop temp 0
 pop pointer 1
 push temp 0
@@ -2724,7 +2708,7 @@ pop that 0
 push constant 8
 push local 0
 add
-push constant 73
+push constant 62
 pop temp 0
 pop pointer 1
 push temp 0
@@ -2732,20 +2716,12 @@ pop that 0
 push constant 9
 push local 0
 add
-push constant 62
-pop temp 0
-pop pointer 1
-push temp 0
-pop that 0
-push constant 10
-push local 0
-add
 push constant 8
 pop temp 0
 pop pointer 1
 push temp 0
 pop that 0
-push constant 11
+push constant 10
 push local 0
 add
 push constant 8
@@ -2850,7 +2826,7 @@ pop that 0
 push local 0
 return
 function RussianAlphabet.GetTSSprite 1
-push constant 12
+push constant 11
 call Array.new 1
 pop local 0
 push constant 0
@@ -2872,7 +2848,7 @@ pop that 0
 push constant 2
 push local 0
 add
-push constant 0
+push constant 33
 pop temp 0
 pop pointer 1
 push temp 0
@@ -2928,20 +2904,12 @@ pop that 0
 push constant 9
 push local 0
 add
-push constant 33
-pop temp 0
-pop pointer 1
-push temp 0
-pop that 0
-push constant 10
-push local 0
-add
 push constant 127
 pop temp 0
 pop pointer 1
 push temp 0
 pop that 0
-push constant 11
+push constant 10
 push local 0
 add
 push constant 64
@@ -3140,7 +3108,7 @@ pop that 0
 push local 0
 return
 function RussianAlphabet.GetSCHSprite 1
-push constant 12
+push constant 11
 call Array.new 1
 pop local 0
 push constant 0
@@ -3162,7 +3130,7 @@ pop that 0
 push constant 2
 push local 0
 add
-push constant 0
+push constant 37
 pop temp 0
 pop pointer 1
 push temp 0
@@ -3218,20 +3186,12 @@ pop that 0
 push constant 9
 push local 0
 add
-push constant 37
-pop temp 0
-pop pointer 1
-push temp 0
-pop that 0
-push constant 10
-push local 0
-add
 push constant 127
 pop temp 0
 pop pointer 1
 push temp 0
 pop that 0
-push constant 11
+push constant 10
 push local 0
 add
 push constant 64
