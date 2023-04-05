@@ -44,10 +44,10 @@ class RussianOutput
         {
             while(i < 11)
             {
-                //Получаем пиксели симолов. Модулем убираем символ справа
+                //Получаем пиксели символов. Модулем убираем символ справа
                 let _charBuffer = MathExtensions.Mod(Memory.peek(32 * i + address), 256);
                 //Чтобы сдвинуть букву на 8 пикселей нужно умножить каждое значение спрайта на 2^8 = 256
-                let _charBuffer = sprite[i] * 256 + MathExtensions.Mod(_charBuffer, 256);
+                let _charBuffer = sprite[i] * 256 + _charBuffer;
                 do Memory.poke(32 * i + address, _charBuffer);
                 let i = i + 1;
             }
@@ -56,7 +56,7 @@ class RussianOutput
         {
             while(i < 11)
             {
-                //Получаем пиксели симолов. Делением убираем символ слева
+                //Получаем пиксели символов. Делением убираем символ слева
                 let _charBuffer = Memory.peek(32 * i + address) / 256;
                 //Сдвигаем полученные символы вправо, а слева пишем символ
                 let _charBuffer = _charBuffer * 256 + sprite[i];
