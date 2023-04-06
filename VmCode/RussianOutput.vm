@@ -97,8 +97,6 @@ push that 0
 push constant 256
 call Math.multiply 2
 push this 3
-push constant 256
-call MathExtensions.Mod 2
 add
 pop this 3
 push constant 32

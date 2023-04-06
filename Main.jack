@@ -22,7 +22,6 @@ class Main
                 let ch = Keyboard.keyPressed();
             }
             do screen.PrintChar(ch);
-            do Output.printInt(ch);
             let prevCh = ch;
         }
         return;

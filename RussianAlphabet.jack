@@ -5,7 +5,7 @@ class RussianAlphabet
                 Z, I, Y, K, L, M, N, O, P, 
                 R, S, T, U, F, H, TS, CH, 
                 SH, SCH, HARD_CHAR, IY, 
-                SOFT_CHAR, AE, YU, YA;
+                SOFT_CHAR, AE, YU, YA, SPACE;
 
     constructor RussianAlphabet new()
     {
@@ -116,6 +116,9 @@ class RussianAlphabet
         let sprite = RussianAlphabet.GetYASprite();
         let _alphabet[YA] = Glyph.new(YA, sprite);
 
+        let sprite = RussianAlphabet.GetSpaceSprite();
+        let _alphabet[SPACE] = Glyph.new(SPACE, sprite);
+
         return this;
     }
 
@@ -128,6 +131,7 @@ class RussianAlphabet
 
     function void InitializeCharValues()
     {
+        let SPACE = 32;
         let A = 70;
         let B = 44;
         let V = 68;
@@ -179,13 +183,33 @@ class RussianAlphabet
             | (ch = Z) | (ch = I) | (ch = Y) | (ch = K) | (ch = L) | (ch = M) | (ch = N) | (ch = O)
             | (ch = P) | (ch = R) | (ch = S) | (ch = T) | (ch = U) | (ch = F) | (ch = H) | (ch = TS)
             | (ch = CH) | (ch = SH) | (ch = SCH) | (ch = HARD_CHAR) | (ch = IY) | (ch = SOFT_CHAR)
-            | (ch = AE) | (ch = YU) | (ch = YA);
+            | (ch = AE) | (ch = YU) | (ch = YA) | (ch = SPACE);
     }
 
     method void dispose()
     {
         do _alphabet.dispose();
         return;
+    }
+
+    function Array GetSpaceSprite()
+    {
+        var Array sprite;
+        let sprite = Array.new(11);
+
+        let sprite[0] = 0;
+        let sprite[1] = 0;
+        let sprite[2] = 0;
+        let sprite[3] = 0;
+        let sprite[4] = 0;
+        let sprite[5] = 0;
+        let sprite[6] = 0;
+        let sprite[7] = 0;
+        let sprite[8] = 0;
+        let sprite[9] = 0;
+        let sprite[10] = 0;
+
+        return sprite;
     }
 
     function Array GetASprite()

@@ -110,14 +110,10 @@ class RussianScreen
             //do MoveRightCursor(1);
             //return;
         //}
-        do Output.printInt(ch);
         if (ch = 129)
         {
             do SetCursorPreviousPosition();
-            do UpdateDefaultOutput();
-            do Output.printChar(32);
-            do _output.PrintChar(70);
-            do UpdateDefaultOutput();
+            do _output.PrintChar(32);
             return;
         }
         if ((ch - 47 > 0) & (ch - 47 < 11))
