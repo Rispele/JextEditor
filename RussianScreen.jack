@@ -51,7 +51,7 @@ class RussianScreen
     }
 
     //Сдвигает курсор на shift позиций вправо.
-    method void MoveCursor(int shift)
+    method void MoveRightCursor(int shift)
     {
         var int newY, newX;
         let newX = _x + shift;
@@ -76,12 +76,48 @@ class RussianScreen
         return;
     }
 
+    //Сдвигает курсор на 1 позицию влево.
+    method void SetCursorPreviousPosition()
+    {
+        var int newY, newX;
+        let newX = _x - 1;
+        if (newX < 0)
+        {
+            let newY = _y - 1;
+            if (newY < 0)
+            {
+                return;
+            }
+            else
+            {
+                let _y = newY;
+            }
+            let _x = _width - 1;
+        }
+        else
+        {
+            let _x = newX;
+        }
+        do _output.SetCursor(_screenY + _y, _screenX + _x);
+        return;
+    }
+
     //Печатает символ. 
     method void PrintChar(char ch)
     {
-        if (ch = 32)
+        //if (ch = 32)
+        //{
+            //do MoveRightCursor(1);
+            //return;
+        //}
+        do Output.printInt(ch);
+        if (ch = 129)
         {
-            do MoveCursor(1);
+            do SetCursorPreviousPosition();
+            do UpdateDefaultOutput();
+            do Output.printChar(32);
+            do _output.PrintChar(70);
+            do UpdateDefaultOutput();
             return;
         }
         if ((ch - 47 > 0) & (ch - 47 < 11))

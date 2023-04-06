@@ -4,12 +4,10 @@ class Main
     {
         var RussianScreen screen;
         var char ch, prevCh;
-        var int i;
         let screen = RussianScreen.new(10, 10, 10, 10);
 
         let ch = 0;
         let prevCh = -1;
-        let i = 0;
         while(true)
         {
             let ch = Keyboard.keyPressed();
@@ -23,15 +21,8 @@ class Main
             {
                 let ch = Keyboard.keyPressed();
             }
-            if (ch = 130)
-            {
-                let i = i - 1;
-            }
-            else
-            {
-                do screen.PrintChar(ch);
-                let i = i + 1;
-            }
+            do screen.PrintChar(ch);
+            do Output.printInt(ch);
             let prevCh = ch;
         }
         return;
