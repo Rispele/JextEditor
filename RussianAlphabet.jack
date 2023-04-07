@@ -5,7 +5,10 @@ class RussianAlphabet
                 Z, I, Y, K, L, M, N, O, P, 
                 R, S, T, U, F, H, TS, CH, 
                 SH, SCH, HARD_CHAR, IY, 
-                SOFT_CHAR, AE, YU, YA, SPACE;
+                SOFT_CHAR, AE, YU, YA, SPACE,
+                AnotherB, AnotherYO, AnotherH,
+                AnotherHARD_CHAR, AnotherZH,
+                AnotherAE, AnotherYU;
 
     constructor RussianAlphabet new()
     {
@@ -125,12 +128,26 @@ class RussianAlphabet
     method Array GetSprite(char ch)
     {
         var Glyph glyph;
+        if (ch = AnotherB) { return RussianAlphabet.GetBSprite(); }
+        if (ch = AnotherYO) { return RussianAlphabet.GetYOSprite(); }
+        if (ch = AnotherH) { return RussianAlphabet.GetHSprite(); }
+        if (ch = AnotherHARD_CHAR) { return RussianAlphabet.GetHARD_CHARSprite(); }
+        if (ch = AnotherZH) { return RussianAlphabet.GetZHSprite(); }
+        if (ch = AnotherAE) { return RussianAlphabet.GetAESprite(); }
+        if (ch = AnotherYU) { return RussianAlphabet.GetYUSprite(); }
         let glyph = _alphabet[ch];
         return glyph.GetSprite();
     }
 
     function void InitializeCharValues()
     {
+        let AnotherB = 1073;
+        let AnotherYO = 1105;
+        let AnotherH = 1093;
+        let AnotherHARD_CHAR = 1098;
+        let AnotherZH = 1078;
+        let AnotherAE = 1101;
+        let AnotherYU = 1102;
         let SPACE = 32;
         let A = 70;
         let B = 44;
@@ -183,7 +200,9 @@ class RussianAlphabet
             | (ch = Z) | (ch = I) | (ch = Y) | (ch = K) | (ch = L) | (ch = M) | (ch = N) | (ch = O)
             | (ch = P) | (ch = R) | (ch = S) | (ch = T) | (ch = U) | (ch = F) | (ch = H) | (ch = TS)
             | (ch = CH) | (ch = SH) | (ch = SCH) | (ch = HARD_CHAR) | (ch = IY) | (ch = SOFT_CHAR)
-            | (ch = AE) | (ch = YU) | (ch = YA) | (ch = SPACE);
+            | (ch = AE) | (ch = YU) | (ch = YA) | (ch = SPACE) | (ch = AnotherB) | (ch = AnotherYO)
+            | (ch = AnotherH) | (ch = AnotherHARD_CHAR) | (ch = AnotherZH) | (ch = AnotherAE)
+            | (ch = AnotherAE) | (ch = AnotherYU);
     }
 
     method void dispose()

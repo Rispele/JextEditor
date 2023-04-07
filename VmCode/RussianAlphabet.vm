@@ -433,6 +433,69 @@ function RussianAlphabet.GetSprite 1
 push argument 0
 pop pointer 0
 push argument 1
+push static 34
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+call RussianAlphabet.GetBSprite 0
+return
+label IF_FALSE0
+push argument 1
+push static 35
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+call RussianAlphabet.GetYOSprite 0
+return
+label IF_FALSE1
+push argument 1
+push static 36
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+call RussianAlphabet.GetHSprite 0
+return
+label IF_FALSE2
+push argument 1
+push static 37
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+call RussianAlphabet.GetHARD_CHARSprite 0
+return
+label IF_FALSE3
+push argument 1
+push static 38
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+call RussianAlphabet.GetZHSprite 0
+return
+label IF_FALSE4
+push argument 1
+push static 39
+eq
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+call RussianAlphabet.GetAESprite 0
+return
+label IF_FALSE5
+push argument 1
+push static 40
+eq
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+call RussianAlphabet.GetYUSprite 0
+return
+label IF_FALSE6
+push argument 1
 push this 0
 add
 pop pointer 1
@@ -442,6 +505,20 @@ push local 0
 call Glyph.GetSprite 1
 return
 function RussianAlphabet.InitializeCharValues 0
+push constant 1073
+pop static 34
+push constant 1105
+pop static 35
+push constant 1093
+pop static 36
+push constant 1098
+pop static 37
+push constant 1078
+pop static 38
+push constant 1101
+pop static 39
+push constant 1102
+pop static 40
 push constant 32
 pop static 33
 push constant 70
@@ -660,6 +737,38 @@ eq
 or
 push argument 0
 push static 33
+eq
+or
+push argument 0
+push static 34
+eq
+or
+push argument 0
+push static 35
+eq
+or
+push argument 0
+push static 36
+eq
+or
+push argument 0
+push static 37
+eq
+or
+push argument 0
+push static 38
+eq
+or
+push argument 0
+push static 39
+eq
+or
+push argument 0
+push static 39
+eq
+or
+push argument 0
+push static 40
 eq
 or
 return
