@@ -1,0 +1,105 @@
+class Alphabet
+{
+    field Array _glyphs;
+    field Array _chars;
+    field Array _additionalCharValues;
+
+    field int _topPointer;
+    field int _size;
+
+    constructor Alphabet new(int size)
+    {
+        let _glyphs = Array.new(size);
+        let _chars = Array.new(size);
+        let _size = size;
+        let _additionalCharValues = Array.new(size);
+        let _topPointer = 0;
+        return this;
+    }
+
+    method void AddChar(Glyph glyph)
+    {
+        let _glyphs[glyph.GetValue()] = glyph;
+        let _chars[_topPointer] = glyph.GetValue();
+        let _topPointer = _topPointer + 1;
+        return;
+    }
+
+    method void AddAdditionalCharValue(char ch, char value)
+    {
+        let _additionalCharValues[ch] = value;
+        return;
+    }
+
+    method boolean IsCharInAlphabet(char ch)
+    {
+        var int i;
+        let i = 0;
+        while (i < _topPointer)
+        {
+            if (_chars[i] = ch)
+            {
+                return true;
+            }
+            let i = i + 1;
+        }
+        let i = 0;
+        while (i < _size)
+        {
+            if (_additionalCharValues[i] = ch)
+            {
+                return true;
+            }
+            let i = i + 1;
+        }
+        return false;
+    }
+
+    method boolean IsLowerCaseCharInAlphabet(char ch)
+    {
+        let ch = ch - 32;
+        return IsCharInAlphabet(ch);
+    }
+
+    method Glyph GetChar(char ch)
+    {
+        var int i;
+        if (ch > 128)
+        {
+            let i = 0;
+            while (i < _size)
+            {
+                if (_additionalCharValues[i] = ch)
+                {
+                    return _glyphs[i];
+                }
+                let i = i + 1;
+            }
+        }
+        return _glyphs[ch];
+    }
+
+    method Array GetSprite(char ch)
+    {
+        var Glyph glyph;
+        let glyph = GetChar(ch);
+
+        return glyph.GetSprite();
+    }
+
+    method void dispose()
+    {
+        var Glyph glyph;
+        var int i, len;
+        let i = 0;
+        let len = _glyphs.length();
+        while(i < len)
+        {
+            let glyph = _glyphs[i];
+            do glyph.dispose();
+            let i = i + 1;
+        }
+        do _glyphs.dispose();
+        return;
+    }
+}

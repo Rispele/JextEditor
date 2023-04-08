@@ -1,0 +1,3604 @@
+function RussianAlphabet.GetAlphabet 2
+call RussianAlphabet.InitializeCharValues 0
+pop temp 0
+push constant 128
+call Alphabet.new 1
+pop local 1
+call RussianAlphabet.GetASprite 0
+pop local 0
+push local 1
+push static 0
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetBSprite 0
+pop local 0
+push local 1
+push static 1
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetVSprite 0
+pop local 0
+push local 1
+push static 2
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetGSprite 0
+pop local 0
+push local 1
+push static 3
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetDSprite 0
+pop local 0
+push local 1
+push static 4
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetESprite 0
+pop local 0
+push local 1
+push static 5
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetDSprite 0
+pop local 0
+push local 1
+push static 4
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetYOSprite 0
+pop local 0
+push local 1
+push static 6
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetZHSprite 0
+pop local 0
+push local 1
+push static 7
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetZSprite 0
+pop local 0
+push local 1
+push static 8
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetISprite 0
+pop local 0
+push local 1
+push static 9
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetYSprite 0
+pop local 0
+push local 1
+push static 10
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetKSprite 0
+pop local 0
+push local 1
+push static 11
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetLSprite 0
+pop local 0
+push local 1
+push static 12
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetMSprite 0
+pop local 0
+push local 1
+push static 13
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetNSprite 0
+pop local 0
+push local 1
+push static 14
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetOSprite 0
+pop local 0
+push local 1
+push static 15
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetPSprite 0
+pop local 0
+push local 1
+push static 16
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetRSprite 0
+pop local 0
+push local 1
+push static 17
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetSSprite 0
+pop local 0
+push local 1
+push static 18
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetTSprite 0
+pop local 0
+push local 1
+push static 19
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetUSprite 0
+pop local 0
+push local 1
+push static 20
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetFSprite 0
+pop local 0
+push local 1
+push static 21
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetHSprite 0
+pop local 0
+push local 1
+push static 22
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetTSSprite 0
+pop local 0
+push local 1
+push static 23
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetCHSprite 0
+pop local 0
+push local 1
+push static 24
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetSHSprite 0
+pop local 0
+push local 1
+push static 25
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetSCHSprite 0
+pop local 0
+push local 1
+push static 26
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetHARD_CHARSprite 0
+pop local 0
+push local 1
+push static 27
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetIYSprite 0
+pop local 0
+push local 1
+push static 28
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetSOFT_CHARSprite 0
+pop local 0
+push local 1
+push static 29
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetAESprite 0
+pop local 0
+push local 1
+push static 30
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetYUSprite 0
+pop local 0
+push local 1
+push static 31
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetYASprite 0
+pop local 0
+push local 1
+push static 32
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+call RussianAlphabet.GetSpaceSprite 0
+pop local 0
+push local 1
+push static 33
+push local 0
+call Glyph.new 2
+call Alphabet.AddChar 2
+pop temp 0
+push local 1
+push static 1
+push static 34
+call Alphabet.AddAdditionalCharValue 3
+pop temp 0
+push local 1
+push static 6
+push static 35
+call Alphabet.AddAdditionalCharValue 3
+pop temp 0
+push local 1
+push static 22
+push static 36
+call Alphabet.AddAdditionalCharValue 3
+pop temp 0
+push local 1
+push static 27
+push static 37
+call Alphabet.AddAdditionalCharValue 3
+pop temp 0
+push local 1
+push static 7
+push static 38
+call Alphabet.AddAdditionalCharValue 3
+pop temp 0
+push local 1
+push static 30
+push static 39
+call Alphabet.AddAdditionalCharValue 3
+pop temp 0
+push local 1
+push static 31
+push static 40
+call Alphabet.AddAdditionalCharValue 3
+pop temp 0
+push local 1
+return
+function RussianAlphabet.InitializeCharValues 0
+push constant 1073
+pop static 34
+push constant 1105
+pop static 35
+push constant 1093
+pop static 36
+push constant 1098
+pop static 37
+push constant 1078
+pop static 38
+push constant 1101
+pop static 39
+push constant 1102
+pop static 40
+push constant 32
+pop static 33
+push constant 70
+pop static 0
+push constant 44
+pop static 1
+push constant 68
+pop static 2
+push constant 85
+pop static 3
+push constant 76
+pop static 4
+push constant 84
+pop static 5
+push constant 96
+pop static 6
+push constant 59
+pop static 7
+push constant 80
+pop static 8
+push constant 66
+pop static 9
+push constant 81
+pop static 10
+push constant 82
+pop static 11
+push constant 75
+pop static 12
+push constant 86
+pop static 13
+push constant 89
+pop static 14
+push constant 74
+pop static 15
+push constant 71
+pop static 16
+push constant 72
+pop static 17
+push constant 67
+pop static 18
+push constant 78
+pop static 19
+push constant 69
+pop static 20
+push constant 65
+pop static 21
+push constant 91
+pop static 22
+push constant 87
+pop static 23
+push constant 88
+pop static 24
+push constant 73
+pop static 25
+push constant 79
+pop static 26
+push constant 93
+pop static 27
+push constant 83
+pop static 28
+push constant 77
+pop static 29
+push constant 39
+pop static 30
+push constant 46
+pop static 31
+push constant 90
+pop static 32
+push constant 0
+return
+function RussianAlphabet.GetSpaceSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetASprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 126
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 97
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 94
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetBSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 120
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 6
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetVSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetGSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 127
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetDSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 56
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 36
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 36
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 36
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 36
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 34
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 34
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 127
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetESprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetYOSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 34
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetZHSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 42
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 42
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 28
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 42
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 42
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetZSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetISprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 97
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 81
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 69
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 67
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetYSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 34
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 28
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 97
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 81
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 69
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 67
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetKSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 33
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 17
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 15
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 17
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 33
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetLSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 124
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 66
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 66
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 66
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetMSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 99
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 99
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 99
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 85
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 85
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 85
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetNSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 127
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetOSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 28
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 34
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 34
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 28
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetPSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 127
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetRSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetSSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 60
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 66
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 66
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 60
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetTSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 127
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetUSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 98
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 92
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetFSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetHSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 34
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 20
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 8
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 20
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 34
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetTSSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 33
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 33
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 33
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 33
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 33
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 33
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 33
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 127
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetCHSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 126
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetSHSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 73
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 127
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetSCHSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 37
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 37
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 37
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 37
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 37
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 37
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 37
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 127
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetHARD_CHARSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 66
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 66
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 66
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetIYSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 79
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 81
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 81
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 81
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 79
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetSOFT_CHARSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 63
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetAESprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 30
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 33
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 124
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 64
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 62
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetYUSprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 57
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 69
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 69
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 69
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 71
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 69
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 69
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 57
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return
+function RussianAlphabet.GetYASprite 1
+push constant 11
+call Array.new 1
+pop local 0
+push constant 0
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 0
+add
+push constant 126
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 0
+add
+push constant 126
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 0
+add
+push constant 66
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 0
+add
+push constant 65
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+return

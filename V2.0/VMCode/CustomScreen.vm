@@ -1,0 +1,389 @@
+function CustomScreen.new 0
+push constant 8
+call Memory.alloc 1
+pop pointer 0
+push argument 0
+push argument 2
+add
+push constant 22
+gt
+push argument 1
+or
+push argument 3
+add
+push constant 63
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 1
+call Sys.error 1
+pop temp 0
+label IF_FALSE0
+push argument 0
+push constant 0
+lt
+push argument 1
+or
+push constant 0
+lt
+push argument 3
+or
+push constant 1
+lt
+push argument 2
+or
+push constant 1
+lt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 1
+call Sys.error 1
+pop temp 0
+label IF_FALSE1
+push argument 0
+pop this 0
+push argument 1
+pop this 1
+push argument 2
+pop this 4
+push argument 3
+pop this 5
+push constant 0
+pop this 2
+push constant 0
+pop this 3
+push argument 4
+pop this 7
+push argument 4
+call CustomOutput.new 1
+pop this 6
+push this 6
+push this 0
+push this 1
+call CustomOutput.SetCursor 3
+pop temp 0
+push pointer 0
+return
+function CustomScreen.SetCursor 0
+push argument 0
+pop pointer 0
+push argument 1
+push constant 1
+add
+push this 5
+gt
+push argument 1
+or
+push constant 0
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 1
+call Sys.error 1
+pop temp 0
+label IF_FALSE0
+push argument 2
+push constant 1
+add
+push this 4
+eq
+push argument 2
+or
+push constant 0
+lt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 1
+call Sys.error 1
+pop temp 0
+label IF_FALSE1
+push argument 1
+pop this 3
+push argument 2
+pop this 2
+push this 6
+push this 0
+push this 2
+add
+push this 1
+push this 3
+add
+call CustomOutput.SetCursor 3
+pop temp 0
+push constant 0
+return
+function CustomScreen.MoveRightCursor 2
+push argument 0
+pop pointer 0
+push this 3
+push argument 1
+add
+pop local 1
+push local 1
+push constant 1
+add
+push this 5
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 2
+push local 1
+push this 5
+call Math.divide 2
+add
+pop local 0
+push local 0
+push constant 1
+add
+push this 4
+gt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push local 0
+push this 4
+call MathExtensions.Mod 2
+pop this 2
+goto IF_END1
+label IF_FALSE1
+push local 0
+pop this 2
+label IF_END1
+push local 1
+push this 5
+call MathExtensions.Mod 2
+pop this 3
+goto IF_END0
+label IF_FALSE0
+push local 1
+pop this 3
+label IF_END0
+push this 6
+push this 0
+push this 2
+add
+push this 1
+push this 3
+add
+call CustomOutput.SetCursor 3
+pop temp 0
+push constant 0
+return
+function CustomScreen.SetCursorPreviousPosition 2
+push argument 0
+pop pointer 0
+push this 3
+push constant 1
+sub
+pop local 1
+push local 1
+push constant 0
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 2
+push constant 1
+sub
+pop local 0
+push local 0
+push constant 0
+lt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+return
+goto IF_END1
+label IF_FALSE1
+push local 0
+pop this 2
+label IF_END1
+push this 5
+push constant 1
+sub
+pop this 3
+goto IF_END0
+label IF_FALSE0
+push local 1
+pop this 3
+label IF_END0
+push this 6
+push this 0
+push this 2
+add
+push this 1
+push this 3
+add
+call CustomOutput.SetCursor 3
+pop temp 0
+push constant 0
+return
+function CustomScreen.PrintChar 0
+push argument 0
+pop pointer 0
+push argument 1
+push constant 129
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push pointer 0
+call CustomScreen.SetCursorPreviousPosition 1
+pop temp 0
+push this 6
+push constant 32
+call CustomOutput.PrintChar 2
+pop temp 0
+push constant 0
+return
+label IF_FALSE0
+push argument 1
+push constant 47
+sub
+push constant 0
+gt
+push argument 1
+push constant 47
+sub
+push constant 11
+lt
+and
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push pointer 0
+call CustomScreen.UpdateDefaultOutput 1
+pop temp 0
+push argument 1
+push constant 48
+sub
+call Output.printInt 1
+pop temp 0
+goto IF_END1
+label IF_FALSE1
+push this 7
+push argument 1
+call Alphabet.IsCharInAlphabet 2
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push this 6
+push argument 1
+call CustomOutput.PrintChar 2
+pop temp 0
+goto IF_END2
+label IF_FALSE2
+push this 7
+push argument 1
+call Alphabet.IsLowerCaseCharInAlphabet 2
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push this 6
+push argument 1
+push constant 32
+sub
+call CustomOutput.PrintChar 2
+pop temp 0
+goto IF_END3
+label IF_FALSE3
+push pointer 0
+call CustomScreen.UpdateDefaultOutput 1
+pop temp 0
+push argument 1
+call Output.printChar 1
+pop temp 0
+label IF_END3
+label IF_END2
+label IF_END1
+push pointer 0
+push constant 1
+call CustomScreen.MoveRightCursor 2
+pop temp 0
+push this 6
+push this 0
+push this 2
+add
+push this 1
+push this 3
+add
+call CustomOutput.SetCursor 3
+pop temp 0
+push constant 0
+return
+function CustomScreen.PrintString 3
+push argument 0
+pop pointer 0
+push constant 0
+pop local 0
+push argument 1
+call String.length 1
+pop local 1
+label WHILE_EXP0
+push local 0
+push local 1
+lt
+not
+if-goto WHILE_END0
+push argument 1
+push local 0
+call String.charAt 2
+pop local 2
+push pointer 0
+push local 2
+call CustomScreen.PrintChar 2
+pop temp 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+return
+function CustomScreen.PrintInt 1
+push argument 0
+pop pointer 0
+push constant 5
+call String.new 1
+pop local 0
+push local 0
+push argument 1
+call String.setInt 2
+pop temp 0
+push pointer 0
+push local 0
+call CustomScreen.PrintString 2
+pop temp 0
+push local 0
+call String.dispose 1
+pop temp 0
+push constant 0
+return
+function CustomScreen.UpdateDefaultOutput 0
+push argument 0
+pop pointer 0
+push this 0
+push this 2
+add
+push this 1
+push this 3
+add
+call Output.moveCursor 2
+pop temp 0
+push constant 0
+return
+function CustomScreen.dispose 0
+push argument 0
+pop pointer 0
+push this 6
+call CustomOutput.dispose 1
+pop temp 0
+push constant 0
+return

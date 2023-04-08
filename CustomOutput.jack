@@ -1,0 +1,98 @@
+class CustomOutput
+{
+    static int _screenAddress;
+
+    field Alphabet _alphabet;
+    field int _y, _x, _charBuffer;
+
+    //Так как буквы шириной 8 пикселей, а запись идет только в 16, то нужно понимать, 
+    //когда сдвигать символ, а когда нет
+    field boolean _isShifting;
+
+    constructor CustomOutput new(Alphabet alphabet)
+    {
+        let _screenAddress = 16384;
+        let _alphabet = alphabet;
+        return this;
+    }
+
+    //Устанавливает курсор на позицию
+    //0 <= y < 64
+    //0 <= x < 23
+    method void SetCursor(int y, int x)
+    {
+        if (x > 63 | _x < 0) { do Sys.error(1); }
+        if (y > 22 | _y < 0) { do Sys.error(1); }
+
+        let _y = y;
+        let _x = x;
+        let _isShifting = MathExtensions.Mod(x, 2);
+        return;
+    }
+    
+    //Печатает символ на позиции курсора
+    method void PrintChar(char ch)
+    {
+        var int i, address;
+        var Array sprite;
+
+        let i = 0;
+        let address = _screenAddress + (_y * 32 * 11) + (_x / 2); 
+        let sprite = _alphabet.GetSprite(ch);
+
+        if (_isShifting)
+        {
+            while(i < 11)
+            {
+                //Получаем пиксели символов. Модулем убираем символ справа
+                let _charBuffer = MathExtensions.Mod(Memory.peek(32 * i + address), 256);
+                //Чтобы сдвинуть букву на 8 пикселей нужно умножить каждое значение спрайта на 2^8 = 256
+                let _charBuffer = sprite[i] * 256 + _charBuffer;
+                do Memory.poke(32 * i + address, _charBuffer);
+                let i = i + 1;
+            }
+        }
+        else
+        {
+            while(i < 11)
+            {
+                //Получаем пиксели символов. Делением убираем символ слева
+                let _charBuffer = Memory.peek(32 * i + address) / 256;
+                //Сдвигаем полученные символы вправо, а слева пишем символ
+                let _charBuffer = _charBuffer * 256 + sprite[i];
+                do Memory.poke(32 * i + address, _charBuffer);
+                let i = i + 1;
+            }
+        }
+
+        return;
+    }
+
+    //Выводит строку. Не проверяет выход за экран.
+    method void PrintString(String s, int from, int to)
+    {
+        var int i;
+        let i = from;
+        while (i < to)
+        {
+            do PrintChar(s.charAt(i));
+            let i = i + 1;
+            let _x = _x + 1;
+            let _isShifting = MathExtensions.Mod(_x, 2);
+        }
+
+        let _x = _x - (to - from);
+        return;
+    }
+
+    method Alphabet GetAlphabet()
+    {
+        return _alphabet;
+    }
+
+    method void dispose()
+    {
+        do _alphabet.dispose();
+        return;
+    }
+}

@@ -1,0 +1,211 @@
+function CustomOutput.new 0
+push constant 5
+call Memory.alloc 1
+pop pointer 0
+push constant 16384
+pop static 0
+push argument 0
+pop this 0
+push pointer 0
+return
+function CustomOutput.SetCursor 0
+push argument 0
+pop pointer 0
+push argument 2
+push constant 63
+gt
+push this 2
+or
+push constant 0
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 1
+call Sys.error 1
+pop temp 0
+label IF_FALSE0
+push argument 1
+push constant 22
+gt
+push this 1
+or
+push constant 0
+lt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 1
+call Sys.error 1
+pop temp 0
+label IF_FALSE1
+push argument 1
+pop this 1
+push argument 2
+pop this 2
+push argument 2
+push constant 2
+call MathExtensions.Mod 2
+pop this 4
+push constant 0
+return
+function CustomOutput.PrintChar 3
+push argument 0
+pop pointer 0
+push constant 0
+pop local 0
+push static 0
+push this 1
+push constant 32
+call Math.multiply 2
+push constant 11
+call Math.multiply 2
+add
+push this 2
+push constant 2
+call Math.divide 2
+add
+pop local 1
+push this 0
+push argument 1
+call Alphabet.GetSprite 2
+pop local 2
+push this 4
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+label WHILE_EXP0
+push local 0
+push constant 11
+lt
+not
+if-goto WHILE_END0
+push constant 32
+push local 0
+call Math.multiply 2
+push local 1
+add
+call Memory.peek 1
+push constant 256
+call MathExtensions.Mod 2
+pop this 3
+push local 0
+push local 2
+add
+pop pointer 1
+push that 0
+push constant 256
+call Math.multiply 2
+push this 3
+add
+pop this 3
+push constant 32
+push local 0
+call Math.multiply 2
+push local 1
+add
+push this 3
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+goto IF_END0
+label IF_FALSE0
+label WHILE_EXP1
+push local 0
+push constant 11
+lt
+not
+if-goto WHILE_END1
+push constant 32
+push local 0
+call Math.multiply 2
+push local 1
+add
+call Memory.peek 1
+push constant 256
+call Math.divide 2
+pop this 3
+push this 3
+push constant 256
+call Math.multiply 2
+push local 0
+push local 2
+add
+pop pointer 1
+push that 0
+add
+pop this 3
+push constant 32
+push local 0
+call Math.multiply 2
+push local 1
+add
+push this 3
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP1
+label WHILE_END1
+label IF_END0
+push constant 0
+return
+function CustomOutput.PrintString 1
+push argument 0
+pop pointer 0
+push argument 2
+pop local 0
+label WHILE_EXP0
+push local 0
+push argument 3
+lt
+not
+if-goto WHILE_END0
+push pointer 0
+push argument 1
+push local 0
+call String.charAt 2
+call CustomOutput.PrintChar 2
+pop temp 0
+push local 0
+push constant 1
+add
+pop local 0
+push this 2
+push constant 1
+add
+pop this 2
+push this 2
+push constant 2
+call MathExtensions.Mod 2
+pop this 4
+goto WHILE_EXP0
+label WHILE_END0
+push this 2
+push argument 3
+push argument 2
+sub
+sub
+pop this 2
+push constant 0
+return
+function CustomOutput.GetAlphabet 0
+push argument 0
+pop pointer 0
+push this 0
+return
+function CustomOutput.dispose 0
+push argument 0
+pop pointer 0
+push this 0
+call Alphabet.dispose 1
+pop temp 0
+push constant 0
+return

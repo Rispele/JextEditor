@@ -1,0 +1,29 @@
+class Main
+{
+    function void main()
+    {
+        var CustomScreen screen;
+        var char ch, prevCh;
+        let screen = CustomScreen.new(10, 10, 10, 10, RussianAlphabet.GetAlphabet());
+
+        let ch = 0;
+        let prevCh = -1;
+        while(true)
+        {
+            let ch = Keyboard.keyPressed();
+            
+            if (prevCh = ch)
+            {
+                do Sys.wait(100);
+                let ch = Keyboard.keyPressed();
+            }
+            while(ch = 0)
+            {
+                let ch = Keyboard.keyPressed();
+            }
+            do screen.PrintChar(ch);
+            let prevCh = ch;
+        }
+        return;
+    }
+}
